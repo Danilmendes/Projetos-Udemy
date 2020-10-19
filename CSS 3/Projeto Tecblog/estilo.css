@@ -1,92 +1,93 @@
 /*Limpar formatações padrão*/
 
 * {
-	margin: 0px;
-	padding: 0px;
+  margin: 0px;
+  padding: 0px;
 }
 
-body{
-	font-size: 1em;
-	font-family: "Trebuchet MS", Helvetica, sans-serif;
-	background: #e6e6e6;
+body {
+  font-size: 1em;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  background: #e6e6e6;
 }
 
 /* Layout*/
 
-#area-cabecalho{
-	background: #f7b600;
-	padding: 15px;
-	text-align: center;
+#area-cabecalho {
+  background: #f7b600;
+  padding: 15px;
+  text-align: center;
 }
-#area-logo , #area-menu{
-	padding: 10px;
-}
-
-h1{
-	color: #4e4e4e;
-	font-size: 2.5em;
+#area-logo,
+#area-menu {
+  padding: 10px;
 }
 
-.branco{
-	color: white;
+h1 {
+  color: #4e4e4e;
+  font-size: 2.5em;
 }
 
-#area-cabecalho a:link, #area-cabecalho a:visited{
-	color: white;
-	padding: 8px 12px;
+.branco {
+  color: white;
 }
 
-#area-cabecalho a:hover{
-	color: #f7b600;
-	background: white;
-	text-decoration: none;
+#area-cabecalho a:link,
+#area-cabecalho a:visited {
+  color: white;
+  padding: 8px 12px;
 }
 
-a{
-	text-decoration: none;
-}
-a:hover{
-	text-decoration: underline;
-}
-a:link, a:visited{
-	color: #f7b600
-}
-#area-principal{
-	background: white;
-	width: 920px;
-	margin: 0px auto;
-	padding: 15px;
+#area-cabecalho a:hover {
+  color: #f7b600;
+  background: white;
+  text-decoration: none;
 }
 
-#area-postagens{
-	width: 660px;
-	float: left;
+a {
+  text-decoration: none;
 }
-#area-lateral{
-	width: 240px;
-	background: yellow;
-	float: right;
+a:hover {
+  text-decoration: underline;
 }
-#rodape{
-	background: green;
-	clear: both;
-	background: #CCC;
-	text-align: center;
-	padding: 15px;
+a:link,
+a:visited {
+  color: #f7b600;
+}
+#area-principal {
+  background: white;
+  width: 920px;
+  margin: 0px auto;
+  padding: 15px;
+}
 
+#area-postagens {
+  width: 660px;
+  float: left;
 }
-.postagem{
-	padding: 20px;
-	margin-bottom: 20px;
-	background: white;
+#area-lateral {
+  width: 240px;
+  background: yellow;
+  float: right;
 }
-h2{
-	color: #f7b600;
+#rodape {
+  background: green;
+  clear: both;
+  background: #ccc;
+  text-align: center;
+  padding: 15px;
 }
-.data-postagem{
-	font-size: 0.8em;
-	display: block;
-	margin-bottom: : 10px;
-	padding-bottom: 10px;
-
+.postagem {
+  padding: 20px;
+  margin-bottom: 20px;
+  background: white;
+}
+h2 {
+  color: #f7b600;
+}
+.data-postagem {
+  font-size: 0.8em;
+  display: block;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
 }
