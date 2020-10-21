@@ -159,7 +159,7 @@ form h2 {
   flex-wrap: wrap;
 }
 #data {
-  width: 40%;
+  width: 43%;
   height: 30px;
   border-radius: 2px;
 }
@@ -247,6 +247,11 @@ footer span {
   main {
     width: 100%;
   }
+  #sections {
+    flex-direction: column-reverse;
+    justify-content: center;
+    text-align: center;
+  }
   #video,
   #map {
     width: 90%;
@@ -257,7 +262,7 @@ footer span {
     line-height: 2rem;
   }
   section {
-    width: 45%;
+    width: 100%;
     margin-top: 6rem;
   }
   #historia,
@@ -270,6 +275,7 @@ footer span {
   }
   #exposições li {
     padding: 0.3rem 0.3rem 0.3rem;
+    list-style-type: none;
   }
   section p,
   #historia a,
