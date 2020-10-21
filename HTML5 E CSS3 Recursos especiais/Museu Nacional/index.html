@@ -12,50 +12,50 @@
 <![endif] -->
   </head>
   <body>
-        <header>
-          <div id="container">
-            <div id="logo">
-              <h1>Museu Nacional</h1>
-              <a href="index.html"><img src="img/logo.png" alt="Logomar do Museu Nacional" /></a>
-            </div>
-            <div id="navbar">
-              <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">EXTENSÕES</a></li>
-                <li><a href="#">PESQUISA</a></li>
-                <li><a href="#">ACERVO</a></li>
-                <li><a href="#">VÍDEOS</a></li>
-                <li><a href="#">FOTOS</a></li>
-                <li><a href="#">CONTATO</a></li>
-              </ul>
-            </div>
-         </div>
-        </header>
-        <main>
-          <div id="museu-foto">
-            <img
-              src="img/museu.png"
-              alt="Foto da entrada principal do Museu Nacional"
-            />
-          </div>
-          <section id="video">
+    <header>
+      <div id="container">
+        <div id="logo">
+          <h1>Museu Nacional</h1>
+          <a href="index.html"
+            ><img src="img/logo.png" alt="Logomar do Museu Nacional"
+          /></a>
+        </div>
+        <div id="navbar">
+          <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">EXTENSÕES</a></li>
+            <li><a href="#">PESQUISA</a></li>
+            <li><a href="#">ACERVO</a></li>
+            <li><a href="#">VÍDEOS</a></li>
+            <li><a href="#">FOTOS</a></li>
+            <li><a href="#">CONTATO</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div id="wrapper">
+      <main>
+        <div id="museu-foto">
+          <img
+            src="img/museu.png"
+            alt="Foto da entrada principal do Museu Nacional"
+          />
+        </div>
+        <div id="sections">
+          <section>
             <h2>VÍDEO: CONHEÇA O MUSEU</h2>
             <iframe
-              width="560"
-              height="315"
+              id="video"
               src="https://www.youtube.com/embed/RGUYb-hivrc"
-              frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen
             ></iframe>
           </section>
-          <section id="map">
+          <section>
             <h2>MAPA: ENCONTRE O MUSEU</h2>
             <iframe
+              id="map"
               src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14700.825245036422!2d-43.226529!3d-22.905760000000004!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4d11e9a933d38ce3!2sMuseu%20Nacional%20-%20UFRJ!5e0!3m2!1spt-BR!2sbr!4v1603112973968!5m2!1spt-BR!2sbr"
-              width="400"
-              height="300"
-              frameborder="0"
               style="border: 0"
               allowfullscreen=""
               aria-hidden="false"
@@ -63,20 +63,38 @@
             ></iframe>
           </section>
           <section id="exposições">
-            <h2>Exposições</h2>
+            <h2>EXPOSIÇÕES</h2>
             <ul id="exposições-lista">
-              <li><a href="">Os assustadores insetos</a></li>
               <li>
-                <a href="">O crânio de Luzia, a mulher mais antiga do Brasil</a>
+                <a class="hiperlink" href="">Os assustadores insetos</a>
               </li>
-              <li><a href="">Preguiça gigante e tigre-dentes-de-sabre</a></li>
-              <li><a href="">Plantas do Brasil Central</a></li>
-              <li><a href="">Teresa Cristina: A Imperatriz Arqueóloga</a></li>
-              <li><a href="">Arte Com Dinossauros - Paleoarte</a></li>
-              <li><a href="">Veja todos (65)</a></li>
+              <li>
+                <a class="hiperlink" href=""
+                  >O crânio de Luzia, a mulher mais antiga do Brasil</a
+                >
+              </li>
+              <li>
+                <a class="hiperlink" href=""
+                  >Preguiça gigante e tigre-dentes-de-sabre</a
+                >
+              </li>
+              <li>
+                <a class="hiperlink" href="">Plantas do Brasil Central</a>
+              </li>
+              <li>
+                <a class="hiperlink" href=""
+                  >Teresa Cristina: A Imperatriz Arqueóloga</a
+                >
+              </li>
+              <li>
+                <a class="hiperlink" href=""
+                  >Arte Com Dinossauros - Paleoarte</a
+                >
+              </li>
+              <li><a class="hiperlink" href="">Veja todos (65)</a></li>
             </ul>
           </section>
-          <section id="200anos">
+          <section id="historia">
             <h2>200 ANOS DE HISTÓRIA</h2>
             <p>
               Numa ponta que avançava sobre o mar, posteriormente conhecida como
@@ -87,44 +105,66 @@
             </p>
             <a class="hiperlink" href="#">Leia mais</a>
           </section>
-        </main>
-        <aside>
-          <div id="depoimento">
-            <img src="depoimento" alt="Depoimento da direção do museu" />
-          </div>
-          <form id="visits-form">
-            <h2>FAÇA UMA VISITA</h2>
-            <label id="date-label" for="date">Data</label>
-            <input id="date" name="date" type="date" placeholder="dd/mm/aaaa" />
+        </div>
+      </main>
+      <aside>
+        <div id="depoimento">
+          <img src="img/depoimento.png" alt="Depoimento da direção do museu" />
+        </div>
+        <form id="visits-form">
+          <h2>FAÇA UMA VISITA</h2>
+          <div class="center">
+            <label id="data-label" for="data">Data</label>
+            <input id="data" name="data" type="date" />
+
             <label id="numero-pessoas-label" for="numero-pessoas"
               >Qtd pessoas</label
             >
-            <input id="numero-pessoas" name="numero-pessoas" type="number" min="1" />
-            <input id="submit" type="submit" value="submit" />
-          </form>
-          <div id="galery">
-            <h2>GALERIA DE FOTOS</h2>
-            <img class="picture" src="img/imagem1.jpg" alt="Imagem 1" />
-            <img class="picture" src="img/imagem2.jpg" alt="Imagem 2" />
-            <img class="picture" src="img/imagem3.jpg" alt="Imagem 3" />
-            <img class="picture" src="img/imagem4.jpg" alt="Imagem 4" />
+            <input
+              id="numero-pessoas"
+              name="numero-pessoas"
+              type="number"
+              min="1"
+            />
           </div>
-        </aside>
-        <footer>
-          <div id="nav-footer">
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Exposições</a></li>
-              <li><a href="#">Pesquisa</a></li>
-              <li><a href="#">Acervo</a></li>
-              <li><a href="#">Vídeos</a></li>
-              <li><a href="#">Fotos</a></li>
-              <li><a href="#">Contato</a></li>
-            </ul>
+          <input id="submit" type="submit" value="Verificar disponibilidade" />
+        </form>
+        <div id="galery">
+          <h2>GALERIA DE FOTOS</h2>
+          <div id="flex">
+            <a href="#"
+              ><img class="picture" src="img/imagem1.jpg" alt="Imagem 1"
+            /></a>
+            <a href="#"
+              ><img class="picture" src="img/imagem2.jpg" alt="Imagem 2"
+            /></a>
+            <a href="#"
+              ><img class="picture" src="img/imagem3.jpg" alt="Imagem 3"
+            /></a>
+            <a href="#"
+              ><img class="picture" src="img/imagem4.jpg" alt="Imagem 4"
+            /></a>
           </div>
-          <p>
-            2020 <span><a href="index.html">Museu Nacional</a> - Todos os direitos reservados</span>
-          </p>
-        </footer>
+        </div>
+      </aside>
+    </div>
+    <footer>
+      <div id="nav-footer">
+        <ul>
+          <li><a class="hiperlink" href="#">Home</a></li>
+          <li><a class="hiperlink" href="#">Exposições</a></li>
+          <li><a class="hiperlink" href="#">Pesquisa</a></li>
+          <li><a class="hiperlink" href="#">Acervo</a></li>
+          <li><a class="hiperlink" href="#">Vídeos</a></li>
+          <li><a class="hiperlink" href="#">Fotos</a></li>
+          <li><a class="hiperlink" href="#">Contato</a></li>
+        </ul>
+      </div>
+      <p>
+        2020
+        <span><a class="hiperlink" href="index.html">Museu Nacional</a></span> -
+        Todos os direitos reservados
+      </p>
+    </footer>
   </body>
 </html>

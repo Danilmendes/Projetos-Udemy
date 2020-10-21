@@ -1,55 +1,323 @@
-*{
-    margin: 0;
-    padding: 0;
+/* Configurações Gerais */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;
-    background-color: rgb(244, 242, 236);
-    box-sizing: border-box;
+body {
+  font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;
+  background-color: rgb(244, 242, 236);
 }
 
-:root{
-    font-size: 75%;
+:root {
+  font-size: 75%;
+}
+/* Start Header */
+
+header {
+  background: url(../img/fundo.png) repeat-x;
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+#container {
+  height: 13vh;
+  width: 80%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+header h1 {
+  margin-top: 0px;
+  text-indent: -9999px;
+  position: absolute;
+}
+#navbar ul {
+  padding: 2rem;
+  list-style: none;
+  text-indent: 0;
+
+  display: flex;
+  justify-content: space-between;
+}
+#navbar ul li {
+  margin-right: 2.5rem;
+  font-size: 1.1rem;
+}
+#navbar a:link,
+#navbar a:visited,
+#navbar a:active {
+  text-decoration: none;
+  color: #af670a;
+}
+#navbar a:hover {
+  padding-bottom: 0.2rem;
+  border-bottom: 1px solid #a9a9a965;
+  color: #227115;
+}
+/* End Header */
+
+#wrapper {
+  margin: 0 auto;
+  width: 85%;
+
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  top: -8vh;
+}
+/* Main */
+main {
+  width: 64%;
+}
+#museu-foto img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+#sections {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+section {
+  width: 46%;
+  padding: 2rem 0.5rem 0 1rem;
+  line-height: 1.4rem;
+}
+section h2 {
+  margin-bottom: 2rem;
+  color: #227115;
+  font-size: 1.1rem;
+}
+#video,
+#map {
+  width: 100%;
+  height: 100%;
+}
+.hiperlink:link,
+.hiperlink:visited,
+.hiperlink:active {
+  color: #af670a;
+  text-decoration: none;
+}
+.hiperlink:hover {
+  color: #227115;
+}
+#exposições,
+#historia {
+  margin-top: 4rem;
+}
+#exposições ul {
+  margin-left: 3rem;
+}
+#exposições li:last-child {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+#historia p {
+  text-align: left;
+}
+#historia a {
+  font-weight: bold;
+  margin-top: 1rem;
+  display: block;
+  font-size: 1.1em;
+}
+/* End main */
+/* Aside */
+aside {
+  width: 31.5%;
+  background: #ebe7dd;
+}
+#depoimento img {
+  width: 100%;
+  height: auto;
+}
+form {
+  background-color: #cdc8b1;
+  width: 100%;
+  padding: 2rem;
+  margin-top: 1.7rem;
+}
+form h2 {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #86521a;
+  margin-bottom: 1.2rem;
+}
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+#data {
+  width: 40%;
+  height: 30px;
+  border-radius: 2px;
+}
+#numero-pessoas {
+  width: clamp(30px, 20%, 50px);
+  height: 30px;
+  border-radius: 2px;
+}
+#submit {
+  width: 100%;
+  margin-top: 1.2rem;
+  padding: 1rem;
+  cursor: pointer;
+  color: white;
+  text-shadow: 1px 1px 1px gray;
+  background: #9b9271;
+  border: none;
+  box-shadow: 1px 1px 3px black;
+  font-size: 1.5rem;
+}
+#galery {
+  padding: 2rem;
+}
+#galery h2 {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #86521a;
+  margin-bottom: 2rem;
+}
+#flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-header{
-    background: url(../img/fundo.png) ;
-    height: 20vh;
-    display: flex;
-    justify-content: center;
+#flex a {
+  padding: 1.6rem;
+  background: url(../img/fundo-foto.png) no-repeat;
+  background-size: cover;
+  margin: 0 1.3rem 1.3rem;
 }
-#container{
-    height: 13vh;
-    width: 80%;
-    border: 1px solid red;
+/* End Aside */
+/* Footer */
+footer {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: auto;
+  border-top: 1px solid #dcd1b8;
+}
+footer ul {
+  display: flex;
+  flex: row;
+  justify-content: center;
+}
+footer ul li {
+  list-style: none;
+  margin: 2rem;
+}
+footer span {
+  margin: 0 0.5rem 0 0.5rem;
+}
+@media (max-width: 768px) {
+  :root {
+    font-size: 35%;
+  }
 
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  #container {
+    height: 9vh;
+    margin-top: 2rem;
+    flex-direction: column;
+  }
+  #navbar ul li {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  #wrapper {
+    width: 100%;
+    flex-direction: column;
     align-items: center;
+  }
+  main {
+    width: 100%;
+  }
+  #video,
+  #map {
+    width: 90%;
+    height: 90%;
+  }
+  section h2 {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+  section {
+    width: 45%;
+    margin-top: 6rem;
+  }
+  #historia,
+  #exposições {
+    margin-top: 6rem;
+  }
+  #exposições a,
+  #historia p {
+    text-align: justify;
+  }
+  #exposições li {
+    padding: 0.3rem 0.3rem 0.3rem;
+  }
+  section p,
+  #historia a,
+  #exposições a {
+    font-size: 2rem;
+    line-height: 2.4rem;
+  }
+  aside {
+    width: 100%;
+    margin-top: 5rem;
+  }
+  form h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  form label {
+    font-size: 2rem;
+    text-align: center;
+    margin: 5px;
+  }
+  #data {
+    width: 40%;
+    display: inline-block;
+  }
+  #numero-pessoas {
+    width: 20%;
+    font-size: 2rem;
+  }
+  #data,
+  #submit {
+    font-size: 2rem;
+  }
+  #data,
+  #numero-pessoas {
+    height: 20px;
+  }
+  #galery h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 1rem;
+  }
+  footer {
+    font-size: 1.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  #nav-footer {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+  }
 }
-
-header h1{
-    margin-top: 0px;
-    text-indent: -9999px;
-    position: absolute;
-}
-#navbar ul{
-    padding: 2rem ;
-    list-style: none;
-    text-indent: 0;  
-
-    display: flex;
-    justify-content: space-between;
-}
-#navbar ul li{
-    margin-right: 2.5rem;
-    font-size: 1.1rem;
-}
-#navbar a{
-    text-decoration: none;
-    color: #AF670A;
-}
-
-
