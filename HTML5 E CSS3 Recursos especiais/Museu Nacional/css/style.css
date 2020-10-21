@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;
+    background-color: rgb(244, 242, 236);
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 75%;
+}
+
+header{
+    background: url(../img/fundo.png) ;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+}
+#container{
+    height: 13vh;
+    width: 80%;
+    border: 1px solid red;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1{
+    margin-top: 0px;
+    text-indent: -9999px;
+    position: absolute;
+}
+#navbar ul{
+    padding: 2rem ;
+    list-style: none;
+    text-indent: 0;  
+
+    display: flex;
+    justify-content: space-between;
+}
+#navbar ul li{
+    margin-right: 2.5rem;
+    font-size: 1.1rem;
+}
+#navbar a{
+    text-decoration: none;
+    color: #AF670A;
+}
+
+
